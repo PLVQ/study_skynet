@@ -8,7 +8,7 @@ end
 skynet.start(function()
     local us
     skynet.error("test unique service")
-    if (#args == 2 and args[1] == true) then
+    if (#args == 2 and args[1] == "true") then
         skynet.error("1")
         us = skynet.uniqueservice(true, args[2])
     else
